@@ -1,0 +1,183 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 500,
+    "background": "transparent",
+    "view": {
+        "fill": "transparent"
+    },
+    "autosize": {
+        "resize": true
+    },
+    "params": [
+        {
+            "name": "year_start",
+            "value": 1935,
+            "bind": {
+                "name": "Year Range Start",
+                "input": "range",
+                "max": 2021,
+                "min": 1935,
+                "step": 1
+            }
+        },
+        {
+            "name": "year_end",
+            "value": 2022,
+            "bind": {
+                "name": "Year Range End",
+                "input": "range",
+                "max": 2022,
+                "min": 1936,
+                "step": 1
+            }
+        }
+    ],
+    "layer": [
+        {
+            "data": {
+                "url": "data/bank_deposits_by_census_regions_1935-2022_transformed.csv"
+            },
+            "mark": {
+                "type": "area"
+            },
+            "params": [
+                {
+                    "name": "stateFilter",
+                    "select": {
+                        "type": "point",
+                        "fields": ["state"]
+                    },
+                    "bind": "legend"
+                }
+            ],
+            "transform": [
+                {
+                    "calculate": "datum.value / 1000000000",
+                    "as": "DEP_B"
+                },
+                {
+                    "calculate": "'US$' + format(datum.value / 1000000000, ',.2f') + 'B'",
+                    "as": "DEP_FORMATTED"
+                },
+                {
+                    "filter": {
+                        "timeUnit": "year",
+                        "field": "year",
+                        "range": [
+                            "year_start",
+                            "year_end"
+                        ]
+                    }
+                }
+            ],
+            "encoding": {
+                "x": {
+                    "title": "Year",
+                    "timeUnit": "year",
+                    "field": "year",
+                    "axis": {
+                        "format": "%Y"
+                    }
+                },
+                "y": {
+                    "title": "Amount (USD in Billions)",
+                    "aggregate": "sum",
+                    "field": "DEP_B"
+                },
+                "color": {
+                    "title": "Census Regions",
+                    "field": "state",
+                    "type": "nominal",
+                    "scale": {
+                        "scheme": "tableau20"
+                    }
+                },
+                "opacity": {
+                    "condition": {
+                        "param": "stateFilter", "value": 1
+                    },
+                    "value": 0.2
+                },
+                "tooltip": [
+                    {
+                        "title": "Year",
+                        "type": "nominal",
+                        "timeUnit": "year",
+                        "field": "year"
+                    },
+                    {
+                        "title": "State",
+                        "type": "nominal",
+                        "field": "state"
+                    },
+                    {
+                        "title": "Deposit",
+                        "field": "DEP_FORMATTED",
+                        "type": "nominal"
+                    }
+                ]
+            }
+        },
+        {
+            "data": {
+                "values": [
+                    {
+                        "name": "Great Recession",
+                        "start": "December 2007",
+                        "end": "June 2009"
+                    },
+                    {
+                        "name": "COVID-19 recession",
+                        "start": "February 2020",
+                        "end": "April 2020"
+                    }
+                ]
+            },
+            "mark": {
+                "type": "rule"
+            },
+            "transform": [
+                {
+                    "filter": {
+                        "timeUnit": "year",
+                        "field": "start",
+                        "range": [
+                            "year_start",
+                            "year_end"
+                        ]
+                    }
+                }
+            ],
+            "encoding": {
+                "x": {
+                    "title": "",
+                    "timeUnit": "monthyear",
+                    "field": "start",
+                    "axis": {
+                        "format": "%Y"
+                    }
+                },
+                "color": {
+                    "value": "red"
+                },
+                "size": {
+                    "value": 2
+                },
+                "tooltip": [
+                    {
+                        "title": "Name",
+                        "type": "nominal",
+                        "field": "name"
+                    },
+                    {
+                        "title": "Start",
+                        "type": "nominal",
+                        "timeUnit": "monthyear",
+                        "field": "start"
+                    }
+                ]
+            }
+        }
+    ]
+}

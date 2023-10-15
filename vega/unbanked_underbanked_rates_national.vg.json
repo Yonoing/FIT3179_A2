@@ -1,0 +1,51 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 400,
+    "background": "transparent",
+    "view": {
+        "fill": "transparent"
+    },
+    "autosize": {
+        "resize": true
+    },
+    "data": {
+        "url": "data/unbanked_underbanked_percentage_2009-2021.csv"
+    },
+    "transform": [
+        {
+            "calculate": "datum.value * 1000",
+            "as": "value2"
+        }
+    ],
+    "mark": {
+        "type": "bar"
+    },
+    "encoding": {
+        "x": {
+            "title": "Year",
+            "field": "year"
+        },
+        "y": {
+            "aggregate": "sum",
+            "field": "value2",
+            "title": "Households",
+            "stack":  "normalize",
+            "axis": {
+                "format": "%"
+            }
+        },
+        "color": {
+            "field": "type",
+            "scale": {
+                "domain": ["Unbanked", "Underbanked", "Fully banked", "Status unknown"],
+                "range": ["#e45756", "#ee8f3b", "#54a24b", "#c7c7c7"]
+            },
+            "legend": {
+                "title": "",
+                "direction": "horizontal",
+                "orient": "bottom"
+            }
+        }
+    }
+}

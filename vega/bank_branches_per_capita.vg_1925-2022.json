@@ -1,0 +1,134 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": "container",
+    "height": 500,
+    "background": "transparent",
+    "view": {
+        "fill": "transparent"
+    },
+    "autosize": {
+        "resize": true
+    },
+    "projection": {
+        "type": "albersUsa"
+    },
+    "layer": [
+        {
+            "data": {
+                "url": "geo/ne_50m.json",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_50m_admin_0_countries"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "lightgray",
+                "stroke": "white"
+            }
+        },
+        {
+            "data": {
+                "url": "geo/ne_50m.json",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_50m_admin_1_states_provinces"
+                }
+            },
+            "transform": [
+                {
+                    "filter": {
+                        "field": "properties.admin",
+                        "equal": "United States of America"
+                    }
+                }
+            ],
+            "mark": {
+                "type": "geoshape",
+                "fill": "Orange",
+                "stroke": "white"
+            }
+        },
+        {
+            "data": {
+                "url": "geo/ne_50m.json",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_50m_admin_1_states_provinces"
+                }
+            },
+            "transform": [
+                {
+                    "lookup": "properties.name",
+                    "from": {
+                        "data": {
+                            "url": "data/num_bank_branches_vs_population_by_states_2021.csv"
+                        },
+                        "key": "state",
+                        "fields": [
+                            "count", "population"
+                        ]
+                    }
+                },
+                {
+                    "filter": "datum.population > 0"
+                },
+                {
+                    "calculate": "datum.count / datum.population * 10000",
+                    "as": "Bank Branches per 10,000 Population"
+                }
+            ],
+            "mark": {
+                "type": "geoshape"
+            },
+            "encoding": {
+                "color": {
+                    "field": "Bank Branches per 10,000 Population",
+                    "type": "quantitative",
+                    "legend": {
+                        "title": "Branches per 10,000",
+                        "titleAlign": "right",
+                        "direction": "vertical",
+                        "orient": "top-right"
+                    }
+                },
+                "tooltip": [
+                    {
+                        "field": "properties.name",
+                        "type": "nominal",
+                        "title": "State"
+                    },
+                    {
+                        "field": "Bank Branches per 10,000 Population",
+                        "type": "quantitative",
+                        "format": ".2f"
+                    },
+                    {
+                        "field": "count",
+                        "title": "Total No. of Bank Branches",
+                        "type": "quantitative"
+                    },
+                    {
+                        "field": "population",
+                        "title": "Estimated Population 2022",
+                        "type": "quantitative"
+                    }
+                ]
+            }
+        },
+        {
+            "data": {
+                "url": "geo/ne_50m.json",
+                "format": {
+                    "type": "topojson",
+                    "feature": "ne_50m_urban_areas"
+                }
+            },
+            "mark": {
+                "type": "geoshape",
+                "fill": "yellow",
+                "stroke": "transparent"
+            }
+        }
+    ]
+}
