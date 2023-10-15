@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>FIT3179 Assignment 2</title>
+    <style>
+        .text-justify {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container py-5">
+    <h1 class="mb-0">
+        FIT3179 Assignment 2
+    </h1>
+    <h1 class="display-3 fw-bold mb-5">
+        Access to Banking in the United States🇺🇸
+    </h1>
+
+    <div class="row mb-5">
+        <div class="col-md-6 d-flex align-items-center">
+            <div class="container">
+                <p class="h4 fw-normal text-justify mb-3">
+                    Access to finance is the ability of individuals or enterprises to obtain financial services,
+                    including credit, deposit, payment, insurance, and other risk management services.
+                    Those who involuntarily have no or only limited access to financial services are referred to
+                    as the unbanked or underbanked, respectively.
+                </p>
+                <p class="h4 fw-normal text-justify">
+                    In the United States, banking had begun by the 1780s, along with the country's founding.
+                    It has developed into a highly influential and complex system of banking and financial services.
+                    Anchored by New York City and Wall Street, it is centered on various financial services,
+                    such as private banking, asset management, and deposit security.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 rounded-5 overflow-hidden mb-4">
+                <div class="card-body bg-light p-4">
+                    <h1 class="mb-2">
+                        <strong>Top 5 Banks</strong> in the US ranked by <strong>Total Assets</strong>
+                    </h1>
+                    <h2 class="h4 text-end mb-3">
+                        (as of 30th June, 2023)
+                    </h2>
+                    <ul class="list-group list-group-flush shadow-sm rounded-5 overflow-hidden">
+                        <li class="list-group-item d-flex">
+                            <h1 class="h2 mb-0 me-2">
+                                🥇
+                            </h1>
+                            <div class="flex-grow-1 d-flex justify-content-between align-items-center">
+                                <h1 class="h3 mb-0">
+                                    JPMorgan Chase
+                                </h1>
+                                <h1 class="h3 mb-0">
+                                    <small>US$</small><span class="fw-bold">3,868B</span>
+                                </h1>
+                            </div>
+
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <h1 class="h2 mb-0 me-2">
+                                🥈
+                            </h1>
+                            <div class="flex-grow-1 d-flex justify-content-between align-items-center">
+                                <h1 class="h3 mb-0">
+                                    Bank of America
+                                </h1>
+                                <h1 class="h3 mb-0">
+                                    <small>US$</small><span class="fw-bold">3,123B</span>
+                                </h1>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <h1 class="h2 mb-0 me-2">
+                                🥉
+                            </h1>
+                            <div class="flex-grow-1 d-flex justify-content-between align-items-center">
+                                <h1 class="h3 mb-0">
+                                    Citigroup
+                                </h1>
+                                <h1 class="h3 mb-0">
+                                    <small>US$</small><span class="fw-bold">2,423B</span>
+                                </h1>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <h1 class="h2 mb-0 me-2"
+                                style="filter: grayscale(1)">
+                                🏅
+                            </h1>
+                            <div class="flex-grow-1 d-flex justify-content-between align-items-center">
+                                <h1 class="h3 mb-0">
+                                    Wells Fargo
+                                </h1>
+                                <h1 class="h3 mb-0">
+                                    <small>US$</small><span class="fw-bold">1,876B</span>
+                                </h1>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex">
+                            <h1 class="h2 mb-0 me-2"
+                                style="filter: grayscale(1)">
+                                🏅
+                            </h1>
+                            <div class="flex-grow-1 d-flex justify-content-between align-items-center">
+                                <h1 class="h3 mb-0">
+                                    Goldman Sachs
+                                </h1>
+                                <h1 class="h3 mb-0">
+                                    <small>US$</small><span class="fw-bold">1,571B</span>
+                                </h1>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="card shadow-lg border-0 rounded-5 overflow-hidden mb-4">
+                <div class="card-body bg-light p-4">
+                    <h1 class="fw-bolder mb-3">
+                        Bank Deposits🪙 by <select id="bank-deposit-region-type"
+                                                  class="fw-bolder rounded-pill border-none px-3">
+                        <option value="census-regions">
+                            <strong>Census Regions</strong>
+                        </option>
+                        <option value="states">
+                            <strong>States</strong>
+                        </option>
+                    </select> from 1935 to 2022
+                    </h1>
+                    <div id="chart2"
+                         class="w-100">
+                        <!-- vega lite chart to be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-md-6 d-flex align-items-center">
+            <div class="container">
+                <h1 class="h2 mb-3">
+                    What is <strong>unbanked</strong>?
+                </h1>
+                <p class="h4 fw-normal text-justify mb-4">
+                    A household is considered <strong>"unbanked"</strong> when <strong>no one</strong> in that household
+                    had a checking or savings account at a bank or credit union.
+                </p>
+
+                <h1 class="h2 mb-3">
+                    What is <strong>underbanked</strong>?
+                </h1>
+                <p class="h4 fw-normal text-justify mb-3">
+                    A household is considered <strong>"underbanked"</strong> when the household was <strong>banked</strong>
+                    but in the past 12 months <strong>used at least one of</strong> the following <strong>non-bank transaction or
+                    credit products or services</strong> that are <strong>disproportionately used by unbanked households</strong>
+                    to meet their transaction and credit needs:
+                </p>
+                <ul class="h4 fw-normal mb-4">
+                    <li class="mb-3">
+                        Money orders, check cashing, or international remittances (i.e., non-bank transactions)
+                    </li>
+                    <li>
+                        Rent-to-own services or payday, pawn shop, tax refund anticipation, or auto title loans (i.e., non-bank credit)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 rounded-5 overflow-hidden mb-4">
+                <div class="card-body bg-light p-4">
+                    <h1 class="fw-bolder mb-3">
+                        Household <strong>Unbanked</strong> and <strong>Underbanked</strong> Rates <br>
+                        from 2009 to 2021
+                    </h1>
+                    <div id="chart3"
+                         class="w-100">
+                        <!-- vega lite chart to be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="card shadow-lg border-0 rounded-5 overflow-hidden mb-4">
+                <div class="card-body bg-light p-4">
+                    <h1 class="fw-bolder mb-3">
+                        Household <select id="bank-access"
+                                          class="fw-bolder rounded-pill border-none px-3">
+                            <option value="unbanked">
+                                <strong>Unbanked</strong>
+                            </option>
+                            <option value="underbanked">
+                                <strong>Underbanked</strong>
+                            </option>
+                            <option value="fully-banked">
+                                <strong>Fully Banked</strong>
+                            </option>
+                        </select> Rate by States in 2021
+                        <!-- showing the size of the banking industry in the US -->
+                    </h1>
+                    <div id="chart4"
+                         class="w-100">
+                        <!-- vega lite chart to be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-md-6">
+            <div class="card shadow-lg border-0 rounded-5 overflow-hidden mb-4">
+                <div class="card-body bg-light p-4">
+                    <h1 class="fw-bolder mb-3">
+                        <strong>Primary Method</strong> of Bank Account Access <br>
+                        from 2013 to 2021
+                        <!-- showing the size of the banking industry in the US -->
+                    </h1>
+                    <div id="chart5"
+                         class="w-100">
+                        <!-- vega lite chart to be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+            <div class="container">
+                <h1 class="h2 mb-3">
+                    The FDIC National Survey categorizes <strong>6 methods</strong> of bank account access:
+                </h1>
+                <ul class="h4 fw-normal mb-4">
+                    <li class="mb-3">
+                        visiting a bank teller;
+                    </li>
+                    <li class="mb-3">
+                        using an ATM or bank kiosk;
+                    </li>
+                    <li class="mb-3">
+                        calling the bank (i.e., telephone banking);
+                    </li>
+                    <li class="mb-3">
+                        using a computer or tablet (i.e., online banking);
+                    </li>
+                    <li class="mb-3">
+                        using an app, text messaging, or internet browser on a mobile phone (i.e., mobile banking);
+                    </li>
+                    <li class="">
+                        or using some other method (i.e., other)
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="card shadow-lg border-0 rounded-5 overflow-hidden mb-4">
+                <div class="card-body bg-light p-4">
+                    <h1 class="fw-bold mb-3">
+                        Bank Branches🏦 per 10,000 Population in 2022
+                    </h1>
+                    <div id="chart1"
+                         class="w-100">
+                        <!-- vega lite chart to be inserted here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="mb-5">
+        <h1 class="fw-bold mb-4">
+            Sources
+        </h1>
+        <ol class="h4 fw-normal">
+            <li class="mb-3">
+                Federal Reserve Statistical Release, Federal Reserve Board of Governors
+                <a href="https://www.federalreserve.gov/releases/lbr/current/default.htm">
+                    https://www.federalreserve.gov/releases/lbr/current/default.htm
+                </a>
+            </li>
+            <li class="mb-3">
+                BankFind Suite: Annual Historical Bank Data, Federal Deposit Insurance Corporation <br>
+                <a href="https://banks.data.fdic.gov/explore/historical">
+                    https://banks.data.fdic.gov/explore/historical
+                </a>
+            </li>
+            <li class="mb-3">
+                Listing of FDIC-insured banks branches and locations, Federal Deposit Insurance Corporation <br>
+                <a href="https://s3-us-gov-west-1.amazonaws.com/cg-2e5c99a6-e282-42bf-9844-35f5430338a5/downloads/locations.csv">
+                    https://s3-us-gov-west-1.amazonaws.com/cg-2e5c99a6-e282-42bf-9844-35f5430338a5/downloads/locations.csv
+                </a>
+            </li>
+            <li class="mb-3">
+                2021 FDIC National Survey of Unbanked and Underbanked Households, Federal Deposit Insurance Corporation <br>
+                <a href="https://www.fdic.gov/analysis/household-survey/">
+                    https://www.fdic.gov/analysis/household-survey/
+                </a>
+            </li>
+            <li class="mb-3">
+                State Population Totals and Components of Change: 2020-2022, United States Census Bureau <br>
+                <a href="https://www2.census.gov/programs-surveys/popest/tables/2020-2022/state/totals/NST-EST2022-POP.xlsx">
+                    https://www2.census.gov/programs-surveys/popest/tables/2020-2022/state/totals/NST-EST2022-POP.xlsx
+                </a>
+            </li>
+        </ol>
+    </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+<script type="module" src="main.mjs"></script>
+</body>
+</html>
