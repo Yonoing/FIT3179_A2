@@ -1,0 +1,29 @@
+year,type,value
+2021,Unbanked,4.5
+2019,Unbanked,5.4
+2017,Unbanked,6.5
+2015,Unbanked,7
+2013,Unbanked,7.7
+2011,Unbanked,8.2
+2009,Unbanked,7.6
+2021,Underbanked,14.1
+2019,Underbanked,17.9
+2017,Underbanked,20
+2015,Underbanked,20.9
+2013,Underbanked,21.1
+2011,Underbanked,20.1
+2009,Underbanked,18.2
+2021,Fully banked,81.5
+2019,Fully banked,76.7
+2017,Fully banked,73.5
+2015,Fully banked,72.1
+2013,Fully banked,71.2
+2011,Fully banked,68.8
+2009,Fully banked,71.4
+2021,Status unknown,0
+2019,Status unknown,0
+2017,Status unknown,0
+2015,Status unknown,0
+2013,Status unknown,0
+2011,Status unknown,2.9
+2009,Status unknown,2.8

@@ -1,0 +1,307 @@
+state,year,type,value
+Alabama,2021,Bank teller,19.5
+Alaska,2021,Bank teller,15.7
+Arizona,2021,Bank teller,7.3
+Arkansas,2021,Bank teller,16
+California,2021,Bank teller,12.4
+Colorado,2021,Bank teller,10.6
+Connecticut,2021,Bank teller,11.6
+Delaware,2021,Bank teller,7.7
+District of Columbia,2021,Bank teller,5.9
+Florida,2021,Bank teller,12.4
+Georgia,2021,Bank teller,14.4
+Hawaii,2021,Bank teller,26.5
+Idaho,2021,Bank teller,15.9
+Illinois,2021,Bank teller,14.5
+Indiana,2021,Bank teller,16.1
+Iowa,2021,Bank teller,20.3
+Kansas,2021,Bank teller,16.4
+Kentucky,2021,Bank teller,14.4
+Louisiana,2021,Bank teller,18.9
+Maine,2021,Bank teller,21.7
+Maryland,2021,Bank teller,9
+Massachusetts,2021,Bank teller,11.8
+Michigan,2021,Bank teller,20.7
+Minnesota,2021,Bank teller,13.9
+Mississippi,2021,Bank teller,25.1
+Missouri,2021,Bank teller,16.4
+Montana,2021,Bank teller,18
+Nebraska,2021,Bank teller,16.2
+Nevada,2021,Bank teller,12.1
+New Hampshire,2021,Bank teller,14.4
+New Jersey,2021,Bank teller,19.5
+New Mexico,2021,Bank teller,13.8
+New York,2021,Bank teller,21.8
+North Carolina,2021,Bank teller,15.2
+North Dakota,2021,Bank teller,18.4
+Ohio,2021,Bank teller,17.6
+Oklahoma,2021,Bank teller,13.8
+Oregon,2021,Bank teller,8.4
+Pennsylvania,2021,Bank teller,15.1
+Rhode Island,2021,Bank teller,16.3
+South Carolina,2021,Bank teller,16.8
+South Dakota,2021,Bank teller,20.5
+Tennessee,2021,Bank teller,20.6
+Texas,2021,Bank teller,12.6
+Utah,2021,Bank teller,6.6
+Vermont,2021,Bank teller,15.7
+Virginia,2021,Bank teller,11.1
+Washington,2021,Bank teller,12.6
+West Virginia,2021,Bank teller,18.5
+Wisconsin,2021,Bank teller,21
+Wyoming,2021,Bank teller,18.7
+Alabama,2021,ATM/Kiosk,17.4
+Alaska,2021,ATM/Kiosk,6.1
+Arizona,2021,ATM/Kiosk,16.4
+Arkansas,2021,ATM/Kiosk,17.3
+California,2021,ATM/Kiosk,22.5
+Colorado,2021,ATM/Kiosk,6.9
+Connecticut,2021,ATM/Kiosk,18.5
+Delaware,2021,ATM/Kiosk,28.5
+District of Columbia,2021,ATM/Kiosk,14.3
+Florida,2021,ATM/Kiosk,15.8
+Georgia,2021,ATM/Kiosk,16.5
+Hawaii,2021,ATM/Kiosk,12.1
+Idaho,2021,ATM/Kiosk,7.8
+Illinois,2021,ATM/Kiosk,14.2
+Indiana,2021,ATM/Kiosk,15.7
+Iowa,2021,ATM/Kiosk,11.6
+Kansas,2021,ATM/Kiosk,11.4
+Kentucky,2021,ATM/Kiosk,22
+Louisiana,2021,ATM/Kiosk,17.1
+Maine,2021,ATM/Kiosk,12.8
+Maryland,2021,ATM/Kiosk,11.1
+Massachusetts,2021,ATM/Kiosk,15.3
+Michigan,2021,ATM/Kiosk,12.2
+Minnesota,2021,ATM/Kiosk,5.6
+Mississippi,2021,ATM/Kiosk,21.9
+Missouri,2021,ATM/Kiosk,18.9
+Montana,2021,ATM/Kiosk,13.1
+Nebraska,2021,ATM/Kiosk,9.9
+Nevada,2021,ATM/Kiosk,22
+New Hampshire,2021,ATM/Kiosk,8.4
+New Jersey,2021,ATM/Kiosk,17.4
+New Mexico,2021,ATM/Kiosk,18.2
+New York,2021,ATM/Kiosk,19.5
+North Carolina,2021,ATM/Kiosk,14.5
+North Dakota,2021,ATM/Kiosk,9.7
+Ohio,2021,ATM/Kiosk,16.1
+Oklahoma,2021,ATM/Kiosk,17.8
+Oregon,2021,ATM/Kiosk,11.7
+Pennsylvania,2021,ATM/Kiosk,22.1
+Rhode Island,2021,ATM/Kiosk,21.5
+South Carolina,2021,ATM/Kiosk,17.6
+South Dakota,2021,ATM/Kiosk,10.2
+Tennessee,2021,ATM/Kiosk,16.7
+Texas,2021,ATM/Kiosk,14
+Utah,2021,ATM/Kiosk,5.4
+Vermont,2021,ATM/Kiosk,11.8
+Virginia,2021,ATM/Kiosk,13.6
+Washington,2021,ATM/Kiosk,11.6
+West Virginia,2021,ATM/Kiosk,21.1
+Wisconsin,2021,ATM/Kiosk,9.6
+Wyoming,2021,ATM/Kiosk,15.1
+Alabama,2021,Telephone banking,3.8
+Alaska,2021,Telephone banking,2.9
+Arizona,2021,Telephone banking,1.5
+Arkansas,2021,Telephone banking,3.8
+California,2021,Telephone banking,1.8
+Colorado,2021,Telephone banking,3.6
+Connecticut,2021,Telephone banking,0
+Delaware,2021,Telephone banking,1.8
+District of Columbia,2021,Telephone banking,0.8
+Florida,2021,Telephone banking,1.9
+Georgia,2021,Telephone banking,1.3
+Hawaii,2021,Telephone banking,1.5
+Idaho,2021,Telephone banking,3.3
+Illinois,2021,Telephone banking,2.9
+Indiana,2021,Telephone banking,2.3
+Iowa,2021,Telephone banking,7
+Kansas,2021,Telephone banking,2.9
+Kentucky,2021,Telephone banking,5.3
+Louisiana,2021,Telephone banking,3.8
+Maine,2021,Telephone banking,4.2
+Maryland,2021,Telephone banking,2.1
+Massachusetts,2021,Telephone banking,2.8
+Michigan,2021,Telephone banking,1.9
+Minnesota,2021,Telephone banking,3.2
+Mississippi,2021,Telephone banking,5.6
+Missouri,2021,Telephone banking,3.9
+Montana,2021,Telephone banking,3.7
+Nebraska,2021,Telephone banking,1.7
+Nevada,2021,Telephone banking,4.5
+New Hampshire,2021,Telephone banking,3.1
+New Jersey,2021,Telephone banking,2.4
+New Mexico,2021,Telephone banking,1
+New York,2021,Telephone banking,2.1
+North Carolina,2021,Telephone banking,4.8
+North Dakota,2021,Telephone banking,3.6
+Ohio,2021,Telephone banking,3.4
+Oklahoma,2021,Telephone banking,7.7
+Oregon,2021,Telephone banking,2.6
+Pennsylvania,2021,Telephone banking,3.6
+Rhode Island,2021,Telephone banking,2.1
+South Carolina,2021,Telephone banking,7.2
+South Dakota,2021,Telephone banking,3.5
+Tennessee,2021,Telephone banking,4.4
+Texas,2021,Telephone banking,2.7
+Utah,2021,Telephone banking,1.5
+Vermont,2021,Telephone banking,3.8
+Virginia,2021,Telephone banking,3.4
+Washington,2021,Telephone banking,2.3
+West Virginia,2021,Telephone banking,4.9
+Wisconsin,2021,Telephone banking,4.6
+Wyoming,2021,Telephone banking,1.7
+Alabama,2021,Online banking,15.7
+Alaska,2021,Online banking,26.8
+Arizona,2021,Online banking,28.8
+Arkansas,2021,Online banking,18
+California,2021,Online banking,21.4
+Colorado,2021,Online banking,26.4
+Connecticut,2021,Online banking,26.6
+Delaware,2021,Online banking,19.3
+District of Columbia,2021,Online banking,24.9
+Florida,2021,Online banking,23.6
+Georgia,2021,Online banking,18.3
+Hawaii,2021,Online banking,19.5
+Idaho,2021,Online banking,25.9
+Illinois,2021,Online banking,19.4
+Indiana,2021,Online banking,21.3
+Iowa,2021,Online banking,17.8
+Kansas,2021,Online banking,23.7
+Kentucky,2021,Online banking,15.7
+Louisiana,2021,Online banking,15.1
+Maine,2021,Online banking,30.5
+Maryland,2021,Online banking,30.4
+Massachusetts,2021,Online banking,29.8
+Michigan,2021,Online banking,20.6
+Minnesota,2021,Online banking,31
+Mississippi,2021,Online banking,12.6
+Missouri,2021,Online banking,16.6
+Montana,2021,Online banking,23.1
+Nebraska,2021,Online banking,23.7
+Nevada,2021,Online banking,22.3
+New Hampshire,2021,Online banking,32.1
+New Jersey,2021,Online banking,27.2
+New Mexico,2021,Online banking,24.6
+New York,2021,Online banking,21.7
+North Carolina,2021,Online banking,21.8
+North Dakota,2021,Online banking,25
+Ohio,2021,Online banking,19.1
+Oklahoma,2021,Online banking,15
+Oregon,2021,Online banking,28.3
+Pennsylvania,2021,Online banking,20.6
+Rhode Island,2021,Online banking,18.2
+South Carolina,2021,Online banking,19.7
+South Dakota,2021,Online banking,19.4
+Tennessee,2021,Online banking,17.5
+Texas,2021,Online banking,19.7
+Utah,2021,Online banking,27
+Vermont,2021,Online banking,31.8
+Virginia,2021,Online banking,26
+Washington,2021,Online banking,23.8
+West Virginia,2021,Online banking,17.9
+Wisconsin,2021,Online banking,23.3
+Wyoming,2021,Online banking,24.3
+Alabama,2021,Mobile banking,42.7
+Alaska,2021,Mobile banking,47.9
+Arizona,2021,Mobile banking,45.5
+Arkansas,2021,Mobile banking,44.2
+California,2021,Mobile banking,41.4
+Colorado,2021,Mobile banking,52.2
+Connecticut,2021,Mobile banking,42.5
+Delaware,2021,Mobile banking,42.2
+District of Columbia,2021,Mobile banking,53.5
+Florida,2021,Mobile banking,45.5
+Georgia,2021,Mobile banking,48.9
+Hawaii,2021,Mobile banking,39.2
+Idaho,2021,Mobile banking,45.8
+Illinois,2021,Mobile banking,48
+Indiana,2021,Mobile banking,43.9
+Iowa,2021,Mobile banking,42.2
+Kansas,2021,Mobile banking,42.1
+Kentucky,2021,Mobile banking,42.7
+Louisiana,2021,Mobile banking,45
+Maine,2021,Mobile banking,30
+Maryland,2021,Mobile banking,46
+Massachusetts,2021,Mobile banking,39.4
+Michigan,2021,Mobile banking,44.2
+Minnesota,2021,Mobile banking,45.8
+Mississippi,2021,Mobile banking,34.4
+Missouri,2021,Mobile banking,43.9
+Montana,2021,Mobile banking,41.1
+Nebraska,2021,Mobile banking,47.8
+Nevada,2021,Mobile banking,38.9
+New Hampshire,2021,Mobile banking,41.2
+New Jersey,2021,Mobile banking,32.8
+New Mexico,2021,Mobile banking,42.2
+New York,2021,Mobile banking,34.8
+North Carolina,2021,Mobile banking,43
+North Dakota,2021,Mobile banking,42.9
+Ohio,2021,Mobile banking,43.3
+Oklahoma,2021,Mobile banking,45.2
+Oregon,2021,Mobile banking,48.3
+Pennsylvania,2021,Mobile banking,38.2
+Rhode Island,2021,Mobile banking,41
+South Carolina,2021,Mobile banking,38.2
+South Dakota,2021,Mobile banking,45.3
+Tennessee,2021,Mobile banking,40.6
+Texas,2021,Mobile banking,49.9
+Utah,2021,Mobile banking,59.2
+Vermont,2021,Mobile banking,35.8
+Virginia,2021,Mobile banking,45.2
+Washington,2021,Mobile banking,49.6
+West Virginia,2021,Mobile banking,36.4
+Wisconsin,2021,Mobile banking,39.5
+Wyoming,2021,Mobile banking,39.8
+Alabama,2021,Other,0.8
+Alaska,2021,Other,0.5
+Arizona,2021,Other,0.5
+Arkansas,2021,Other,0.8
+California,2021,Other,0.6
+Colorado,2021,Other,0.3
+Connecticut,2021,Other,0.9
+Delaware,2021,Other,0.5
+District of Columbia,2021,Other,0.6
+Florida,2021,Other,0.7
+Georgia,2021,Other,0.6
+Hawaii,2021,Other,1.2
+Idaho,2021,Other,1.3
+Illinois,2021,Other,1
+Indiana,2021,Other,0.7
+Iowa,2021,Other,1.2
+Kansas,2021,Other,3.4
+Kentucky,2021,Other,0
+Louisiana,2021,Other,0.1
+Maine,2021,Other,0.7
+Maryland,2021,Other,1.4
+Massachusetts,2021,Other,0.9
+Michigan,2021,Other,0.4
+Minnesota,2021,Other,0.5
+Mississippi,2021,Other,0.4
+Missouri,2021,Other,0.3
+Montana,2021,Other,1
+Nebraska,2021,Other,0.7
+Nevada,2021,Other,0.3
+New Hampshire,2021,Other,0.8
+New Jersey,2021,Other,0.6
+New Mexico,2021,Other,0.3
+New York,2021,Other,0.1
+North Carolina,2021,Other,0.8
+North Dakota,2021,Other,0.4
+Ohio,2021,Other,0.5
+Oklahoma,2021,Other,0.6
+Oregon,2021,Other,0.6
+Pennsylvania,2021,Other,0.4
+Rhode Island,2021,Other,0.8
+South Carolina,2021,Other,0.4
+South Dakota,2021,Other,1
+Tennessee,2021,Other,0.2
+Texas,2021,Other,1.1
+Utah,2021,Other,0.3
+Vermont,2021,Other,1.1
+Virginia,2021,Other,0.6
+Washington,2021,Other,0.1
+West Virginia,2021,Other,1.1
+Wisconsin,2021,Other,2
+Wyoming,2021,Other,0.4
